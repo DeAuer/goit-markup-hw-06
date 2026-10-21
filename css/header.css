@@ -1,0 +1,85 @@
+.header {
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  color: #2e2f42;
+  margin-right: 76px;
+  padding: 24px 0;
+}
+
+.logo-web-h {
+  color: #4d5ae5;
+}
+
+.nav-a {
+  display: inline-block;
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-a.current {
+  color: #404bbf;
+}
+
+.nav-a.current::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background: #404bbf;
+}
+
+.nav-a:hover,
+.nav-a:focus {
+  color: #404bbf;
+}
+
+.address {
+  margin-left: auto;
+}
+
+.address ul,
+.navigation ul {
+  display: flex;
+  gap: 40px;
+}
+
+.address a:hover,
+.address a:focus {
+  color: #404bbf;
+}
+
+.adr-a {
+  color: #434455;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
