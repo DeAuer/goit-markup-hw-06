@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 88px;
+  gap: 72px;
   margin: auto;
 }
 
@@ -62,7 +62,7 @@
   .hero-h1 {
     font-size: 56px;
     line-height: 1.07143;
-    max-width: 496;
+    max-width: 496px;
   }
 
   .hero-container {

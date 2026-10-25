@@ -163,6 +163,7 @@
   .footer-info {
     width: 264px;
     max-width: 264px;
+    text-align: left;
   }
 
   .footer-social {
@@ -191,9 +192,8 @@
   }
 
   .footer-content {
-    max-width: none;
+    max-width: 1158px;
     flex-wrap: nowrap;
-    align-items: baseline;
     justify-content: flex-start;
     gap: 0;
   }
