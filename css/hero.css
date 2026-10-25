@@ -17,26 +17,20 @@
   height: 436px;
 }
 
-@media screen and (min-width: 1158px) {
-  .hero {
-    height: 600px;
-  }
-}
-
 .hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
+  gap: 88px;
   margin: auto;
 }
 
 .hero-h1 {
   font-weight: 700;
-  font-size: 56px;
+  font-size: 36px;
   text-align: center;
-  line-height: 1.07143;
-  max-width: 498px;
+  line-height: 1.11111;
+  max-width: 216px;
 }
 
 .button-hero {
@@ -58,4 +52,31 @@
 .button-hero:hover,
 .button-hero:focus {
   background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-block: 112px;
+  }
+
+  .hero-h1 {
+    font-size: 56px;
+    line-height: 1.07143;
+    max-width: 496;
+  }
+
+  .hero-container {
+    gap: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    height: 600px;
+    padding-block: 188px;
+  }
+
+  .hero-container {
+    gap: 48px;
+  }
 }

@@ -20,10 +20,12 @@
   transition-property: opacity, visibility;
 }
 
-.mobile-menu-container.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
+@media screen and (max-width: 767px) {
+  .mobile-menu-container.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
 }
 
 .close-button-menu {
@@ -95,9 +97,9 @@
 }
 
 .address-mobile a {
-  color: #2e2f42;
+  color: #434455;
 }
 
 .address-mobile li:first-child a {
-  color: #404bbf;
+  color: #4d5ae5;
 }

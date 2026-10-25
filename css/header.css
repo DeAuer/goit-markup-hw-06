@@ -16,7 +16,7 @@
   letter-spacing: 0.03em;
   color: #2e2f42;
   margin-right: 76px;
-  padding: 24px 0;
+  padding: 16px 0;
 }
 
 .logo-web-h {
@@ -47,6 +47,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .logo-header {
+    padding: 24px 0;
+    margin-right: 120px;
+  }
+
   .btn-mobile-menu {
     display: none;
   }
@@ -111,12 +116,15 @@
     font-size: 12px;
     line-height: 1.16667;
     letter-spacing: 0.04em;
-    padding: 24px 0;
+    padding: 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 @media screen and (min-width: 1158px) {
+  .logo-header {
+    margin-right: 76px;
+  }
 
   .address ul {
     flex-direction: row;
@@ -124,4 +132,9 @@
     gap: 40px;
   }
 
+  .adr-a {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 }

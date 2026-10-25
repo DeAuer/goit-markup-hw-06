@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header id="header" class="header">
@@ -502,6 +502,10 @@
               <div class="port-wrapper">
                 <img
                   src="./images/portfolio.jpg"
+                  srcset="
+                    ./images/portfolio.jpg    1x,
+                    ./images/portfolio@2x.jpg 2x
+                  "
                   alt="Interface of the App"
                   width="360"
                 />
@@ -523,6 +527,10 @@
               <div class="port-wrapper">
                 <img
                   src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio-1.jpg    1x,
+                    ./images/portfolio-1@2x.jpg 2x
+                  "
                   alt="Payment with QR-Code"
                   width="360"
                 />
@@ -545,6 +553,10 @@
               <div class="port-wrapper">
                 <img
                   src="./images/portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio-2.jpg    1x,
+                    ./images/portfolio-2@2x.jpg 2x
+                  "
                   alt="Laptop & Smartphone with advertisement"
                   width="360"
                 />
@@ -566,6 +578,10 @@
               <div class="port-wrapper">
                 <img
                   src="./images/portfolio-3.jpg"
+                  srcset="
+                    ./images/portfolio-3.jpg    1x,
+                    ./images/portfolio-3@2x.jpg 2x
+                  "
                   alt="Interior of a car with a steering wheel"
                   width="360"
                 />
@@ -586,6 +602,10 @@
               <div class="port-wrapper">
                 <img
                   src="./images/portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio-4.jpg    1x,
+                    ./images/portfolio-4@2x.jpg 2x
+                  "
                   alt="Different Screen Illustrations"
                   width="360"
                 />
@@ -606,6 +626,10 @@
               <div class="port-wrapper">
                 <img
                   src="./images/portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio-5.jpg    1x,
+                    ./images/portfolio-5@2x.jpg 2x
+                  "
                   alt="Woman communicating through Smartphone"
                   width="360"
                 />
@@ -758,110 +782,109 @@
     <!-- Menu mobile window -->
 
     <div id="mobile-menu" class="mobile-menu-container">
-      <button
-        class="close-button-menu"
-        type="button"
-        aria-label="Close menu button"
-      >
-        <svg width="8" height="8" viewBox="0 0 8 8">
-          <use href="./images/icons.svg#close"></use>
-        </svg>
-      </button>
-
-      <nav class="navigation-mobile">
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-        </ul>
-      </nav>
-
-      <div class="menu-nav-social">
-        <address class="address-mobile">
+      <div class="mobile-menu">
+        <button
+          class="close-button-menu"
+          type="button"
+          aria-label="Close menu button"
+        >
+          <svg width="8" height="8" viewBox="0 0 8 8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="navigation-mobile">
           <ul>
-            <li>
-              <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
+        <div class="menu-nav-social">
+          <address class="address-mobile">
+            <ul>
+              <li>
+                <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+          <ul class="menu-social-list">
+            <li class="link-social-item">
+              <a
+                class="link-social"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg
+                  class="icon-social"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="link-social-item">
+              <a
+                class="link-social"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <svg
+                  class="icon-social"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="link-social-item">
+              <a
+                class="link-social"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <svg
+                  class="icon-social"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="link-social-item">
+              <a
+                class="link-social"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  class="icon-social"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-
-        <ul class="menu-social-list">
-          <li class="link-social-item">
-            <a
-              class="link-social"
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-              <svg
-                class="icon-social"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <use href="./images/icons.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="link-social-item">
-            <a
-              class="link-social"
-              href="https://x.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-            >
-              <svg
-                class="icon-social"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="link-social-item">
-            <a
-              class="link-social"
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-            >
-              <svg
-                class="icon-social"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="link-social-item">
-            <a
-              class="link-social"
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <svg
-                class="icon-social"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <use href="./images/icons.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </div>
 
