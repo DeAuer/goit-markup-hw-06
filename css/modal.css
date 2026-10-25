@@ -1,9 +1,7 @@
 .backdrop {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
-  height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   z-index: 999;
 
@@ -29,21 +27,27 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow-y: auto;
 
-  width: 408px;
-  height: 582px;
+  width: 288px;
+  height: 619px;
+  max-width: 408px;
+  max-height: calc(100dvh - 32px);
+  box-sizing: border-box;
 
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   gap: 16px;
+
   border-radius: 4px;
-  padding: 72px 24px 24px;
+  padding: 72px 16px 24px; /* desktop 72px 24px 24px;*/
 
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
+
   background: #fcfcfc;
 }
 
@@ -55,10 +59,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 24px;
+  border-radius: 50%;
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
@@ -85,22 +88,22 @@
 }
 
 .modal-form {
-  width: 360px;
-  height: 446px;
-
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   flex-direction: column;
+
+  width: 100%;
+  min-width: 0;
+  /*height: 446px;*/
 }
 
 .modal-fields {
-  width: 100%;
-  height: 100%;
-
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: stretch;
   gap: 8px;
+
+  width: 100%;
 }
 
 .modal-form-field {
@@ -108,36 +111,40 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
+  width: 100%;
 }
+
 .modal-form-label {
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+
 .modal-form-wrapper {
   position: relative;
+  width: 100%;
 }
+
 .modal-form-input {
-  display: flex;
-  align-items: center;
-  gap: 0;
+  display: block;
+
+  width: 100%;
+  height: 40px;
+  padding: 8px 38px;
+
+  box-sizing: border-box;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: none;
 
-  padding: 8px 38px;
-  width: 360px;
-  height: 40px;
-  max-width: 360px;
-  min-height: 40px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus {
@@ -160,8 +167,12 @@
 }
 
 .modal-form-comment {
-  width: 360px;
+  display: block;
+  width: 100%;
   height: 120px;
+
+  box-sizing: border-box;
+
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -196,14 +207,22 @@
 }
 
 .modal-form-policy {
+  display: flex;
+  align-items: center;
+  gap: 0;
+
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
+.modal-form-policy-text {
+  min-width: 0;
+}
+
 .modal-form-link {
-  line-height: 1.16667;
+  line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
@@ -213,15 +232,16 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   margin-right: 8px;
 
   border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 0.88px solid rgba(46, 47, 66, 0.4);
 
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
 }
 .modal-form-check-icon {
   color: #f4f4fd;
@@ -249,15 +269,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0;
 
   border-radius: 4px;
   padding: 16px 32px;
   width: 169px;
-  height: 56px;
+  min-height: 56px;
+  box-sizing: border-box;
 
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
@@ -276,3 +295,17 @@
 .modal-form-button:hover {
   background-color: #404bbf;
 }
+
+@media screen and (min-width: 768px) {
+  .modal-window {
+    width: 408px;
+    padding: 72px 24px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .modal-window {
+    width: 408px;
+  }
+}
+

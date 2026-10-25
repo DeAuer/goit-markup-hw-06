@@ -25,6 +25,13 @@
         <a href="./index.html" class="logo-header"
           ><span class="logo-web-h">WEB</span>STUDIO
         </a>
+
+        <button type="button" class="button btn-mobile-menu" aria-label="menu">
+          <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+
         <nav class="navigation">
           <ul>
             <li><a href="#features" class="nav-a current">Features</a></li>
@@ -32,6 +39,7 @@
             <li><a href="#portfolio" class="nav-a">Portfolio</a></li>
           </ul>
         </nav>
+
         <address class="address">
           <ul>
             <li>
@@ -39,6 +47,7 @@
                 >info@devstudio.com</a
               >
             </li>
+
             <li>
               <a href="tel:+110001111111" class="adr-a">+11 (000) 111-11-11</a>
             </li>
@@ -50,14 +59,16 @@
       <section id="hero" class="hero">
         <div class="container hero-container">
           <h1 class="hero-h1">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="btn button-hero">Order Service</button>
         </div>
       </section>
+
       <section id="features" class="features">
         <div class="container features-container">
           <h2 class="sr-only">Our features</h2>
+
           <ul class="features-list">
-            <li class="card">
+            <li class="feat-card">
               <div class="feature-decor">
                 <svg class="icon" width="64" height="64" viewBox="0 0 64 64">
                   <use href="./images/icons.svg#antena"></use>
@@ -69,7 +80,8 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="card">
+
+            <li class="feat-card">
               <div class="feature-decor">
                 <svg class="icon" width="64" height="64" viewBox="0 0 64 64">
                   <use href="./images/icons.svg#clock"></use>
@@ -81,7 +93,8 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="card">
+
+            <li class="feat-card">
               <div class="feature-decor">
                 <svg class="icon" width="64" height="64" viewBox="0 0 64 64">
                   <use href="./images/icons.svg#diagram"></use>
@@ -93,7 +106,8 @@
                 opportunities and minimize risk.
               </p>
             </li>
-            <li class="card">
+
+            <li class="feat-card">
               <div class="feature-decor">
                 <svg class="icon" width="64" height="64" viewBox="0 0 64 64">
                   <use href="./images/icons.svg#astronaut"></use>
@@ -116,7 +130,12 @@
           <h2>Our Team</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img src="./images/team-1.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                src="./images/team-1.jpg"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="name-card">
                 <h3>Mark Guerrero</h3>
                 <p>Product Designer</p>
@@ -202,7 +221,12 @@
             </li>
 
             <li class="team-card">
-              <img src="./images/team-2.jpg" alt="Tom Ford" width="264" />
+              <img
+                src="./images/team-2.jpg"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="name-card">
                 <h3>Tom Ford</h3>
                 <p>Frontend Developer</p>
@@ -287,7 +311,12 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/team-3.jpg" alt="Camila Garcia" width="264" />
+              <img
+                src="./images/team-3.jpg"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="name-card">
                 <h3>Camila Garcia</h3>
                 <p>Marketing</p>
@@ -371,7 +400,12 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/team-4.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                src="./images/team-4.jpg"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="name-card">
                 <h3>Daniel Wilson</h3>
                 <p>UI Designer</p>
@@ -484,6 +518,7 @@
                 <p>App</p>
               </div>
             </li>
+
             <li class="port-card">
               <div class="port-wrapper">
                 <img
@@ -505,6 +540,7 @@
                 <p>Marketing</p>
               </div>
             </li>
+
             <li class="port-card">
               <div class="port-wrapper">
                 <img
@@ -516,7 +552,7 @@
                 <div class="port-overlay">
                   <p class="overlay-text">
                     Продам гараж, біля дерева, воріт немає, дах тече але підлога
-                    солідна. Тел. +380957879
+                    солідна. Тел. +380667879
                   </p>
                 </div>
               </div>
@@ -525,6 +561,7 @@
                 <p>App</p>
               </div>
             </li>
+
             <li class="port-card">
               <div class="port-wrapper">
                 <img
@@ -544,6 +581,7 @@
                 <p>Marketing</p>
               </div>
             </li>
+
             <li class="port-card">
               <div class="port-wrapper">
                 <img
@@ -563,6 +601,7 @@
                 <p>Design</p>
               </div>
             </li>
+
             <li class="port-card">
               <div class="port-wrapper">
                 <img
@@ -699,7 +738,7 @@
                 required
               />
 
-              <button class="footer-button" type="submit">
+              <button class="btn footer-button" type="submit">
                 Subscribe
                 <svg
                   class="icon-social"
@@ -715,6 +754,116 @@
         </div>
       </div>
     </footer>
+
+    <!-- Menu mobile window -->
+
+    <div id="mobile-menu" class="mobile-menu-container">
+      <button
+        class="close-button-menu"
+        type="button"
+        aria-label="Close menu button"
+      >
+        <svg width="8" height="8" viewBox="0 0 8 8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <nav class="navigation-mobile">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-nav-social">
+        <address class="address-mobile">
+          <ul>
+            <li>
+              <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+
+        <ul class="menu-social-list">
+          <li class="link-social-item">
+            <a
+              class="link-social"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <svg
+                class="icon-social"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="link-social-item">
+            <a
+              class="link-social"
+              href="https://x.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <svg
+                class="icon-social"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="link-social-item">
+            <a
+              class="link-social"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <svg
+                class="icon-social"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="link-social-item">
+            <a
+              class="link-social"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg
+                class="icon-social"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Modal window -->
 
@@ -803,15 +952,18 @@
                   <use href="./images/icons.svg#check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a
-                class="modal-form-link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Privacy Policy"
-                >Privacy Policy</a
-              >
+
+              <span class="modal-form-policy-text">
+                I accept the terms and conditions of the
+                <a
+                  class="modal-form-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Privacy Policy"
+                  >Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
 
